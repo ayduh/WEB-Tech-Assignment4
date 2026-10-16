@@ -9,15 +9,17 @@
   <main>
     <form>
       <label for="fname">First Name</label>
-      <input type="name" name="fname"><br>
+      <input type="name" required id="fname"><br>
       <label for="lname">Last Name</label>
-      <input type="name" name="lname"><br>
+      <input type="name" required id="lname"><br>
       <label for="email">Email</label>
-      <input type="email" pattern="" name="email"><br>
+      <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required id="email"><br>
       <label for="message">Message</label>
-      <input type="text" name="message"><br>
-      <input type="submit" name="submit">
+      <input type="text" maxlength="9" id="message"><br>
+      <input type="submit">
     </form>
+
+    <a href="bsform.html">Part 2</a>
   </main>
 </body>
 </html>
