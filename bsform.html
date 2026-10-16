@@ -27,7 +27,59 @@
           </div>
         </div>
 
-        
+        <div class="mb-3">
+          <label class="form-label d-block">Gender:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="genderMale" required>
+            <label class="form-check-label" for="genderMale">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="genderFemale" required>
+            <label class="form-check-label" for="genderFemale">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="genderOther" required>
+            <label class="form-check-label" for="genderOther">Other</label>
+            <div class="invalid-feedback">Please select a gender</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">Hobbies:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="hobbySports">
+            <label class="form-check-label" for="hobbySports">Sports</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="hobbyMusic">
+            <label class="form-check-label" for="hobbyMusic">Music</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="hobbyReading">
+            <label class="form-check-label" for="hobbyReading">Reading</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="country" class="form-label">Country:</label>
+          <select id="country" class="form-select" required>
+            <option selected disabled>Choose your country...</option>
+            <option>USA</option>
+            <option>Kazakhstan</option>
+            <option>United Kingdom</option>
+            <option>Other</option>
+          </select>
+          <div class="invalid-feedback">Please select a country</div>
+          <div class="valid-feedback">Good!</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input id="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll contact you</div>
+          <div class="invalid-feedback">Enter correct email</div>
+          <div class="valid-feedback">Good!</div>
+        </div>
 
         <div class="row">
           <div class="mb-3">
@@ -42,14 +94,6 @@
             <div class="invalid-feedback" id="confirmFeedback">Passwords must match</div>
             <div class="valid-feedback">Good!</div>
           </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="email" class="form-label">Email:</label>
-          <input id="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text">We'll contact you</div>
-          <div class="invalid-feedback">Enter correct email</div>
-          <div class="valid-feedback">Good!</div>
         </div>
 
         <div class="mb-3">
