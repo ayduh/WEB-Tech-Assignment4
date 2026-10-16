@@ -11,6 +11,7 @@
   <div class="container min-vh-100 d-flex justify-content-center align-items-start">
     <div class="card p-4 shadow-lg" style="max-width: 500px; width: 100%;">
       <form class="needs-validation" novalidate>
+
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="fname" class="form-label">First Name:</label>
@@ -25,6 +26,24 @@
             <div class="valid-feedback">Good!</div>
           </div>
         </div>
+
+        
+
+        <div class="row">
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input id="password" type="password" class="form-control" minlength="6" required>
+            <div class="invalid-feedback">Must be at least 6 characters</div>
+            <div class="valid-feedback">Good!</div>
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password:</label>
+            <input id="confirmPassword" type="password" class="form-control" required>
+            <div class="invalid-feedback" id="confirmFeedback">Passwords must match</div>
+            <div class="valid-feedback">Good!</div>
+          </div>
+        </div>
+
         <div class="mb-3">
           <label for="email" class="form-label">Email:</label>
           <input id="email" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" class="form-control" aria-describedby="emailHelp" required>
@@ -32,15 +51,18 @@
           <div class="invalid-feedback">Enter correct email</div>
           <div class="valid-feedback">Good!</div>
         </div>
+
         <div class="mb-3">
           <label for="message" class="form-label">Message:</label>
           <input id="message" type="text" class="form-control" aria-describedby="messageHelp">
           <div id="messageHelp" class="form-text">Anything you want to add?</div>
         </div>
+
         <div class="row d-flex justify-content-sm-between">
           <button type="submit" class="col-md-7 btn btn-dark mt-4">Submit</button>
           <button type="reset" class="button-clear-custom col-md-2 btn btn-danger mt-4">Clear</button>
         </div>
+
       </form>
     </div>
   </div>
